@@ -1,0 +1,232 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --bg-light-green: rgba(0, 35, 117, 0.441);
+    --bg-green-yellow: #D07CA4;
+    --bg-dark-yellow: #C12B72;
+    --bd-light-yellow: #fff;
+}
+
+.nav-bar{
+    width: 100%;
+    
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-sizing: border-box;
+    
+    color: white;
+}
+.parallax {
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+  }
+  
+  .header {
+    height: 30vh;
+    width: 100%;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(0, 35, 117, 0.441),
+        rgba(117, 57, 0, 0.443)
+      ),
+      url("back.jpg");
+  }
+  .back {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 3%;
+    margin-bottom: 10%;
+    background-repeat: no-repeat;
+    font-size: 40px;
+    
+  }
+
+  .d-flex {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .students {
+    display: flex;
+    gap: 10px;
+    height: auto;
+    width: 100%;
+    background: #00416A;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #E4E5E6, #00416A);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #E4E5E6, #00416A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ }
+  
+  .enroll-student {
+    margin-top: 30px;
+    padding-right: 100px;
+    box-sizing: border-box;
+    width: 45%;
+    height: auto;
+  }
+  
+  #enrolled-students {
+    margin-top: 25px;
+    margin-bottom: 15px;
+    justify-content: center;
+    width: 55%;
+    height: calc(100vh - 70px);
+    overflow: scroll;
+  }
+  
+  .enroll-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .gender {
+    padding-left: 15px;
+  }
+  
+  .label {
+    display: flex;
+    font-size: 30px;
+  }
+  
+  .form-control {
+    margin-bottom: 16px;
+  }
+  
+  .seperation-border {
+    box-sizing: border-box;
+    box-shadow: 0px 0px 3px 0px var(--bg-light-green);
+    width: 1.3px;
+    height: 70vh;
+    background: var(--bg-light-green);
+  }
+  
+  @media screen and (max-width: 768px) {
+    hr.seperation-border{
+      height: 0;
+    }
+  }
+  
+  .sectionHeading {
+    display: flex;
+    align-items: center;
+    background-color: #00416A;
+    color: #fff;
+    box-sizing: border-box;
+    border: solid 2px var(--b-dark-yellow);
+  }
+  
+  .sectionHeading > p {
+    padding: 10px 12px;
+    margin: 0;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  
+  .description {
+    box-sizing: border-box;
+    border-right: solid 2px var(--b-dark-yellow);
+    margin-bottom: 0;
+    width: 70%;
+  }
+  
+  .Image {
+    margin-bottom: 0;
+    width: 30%;
+  }
+  
+  .infoText {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .userName {
+    font-weight: bold;
+  }
+  
+  .wrapper {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 130px;
+    justify-content: space-between;
+    border: solid 2px var(--b-dark-yellow);
+    border-top: none;
+    animation: fadeIn 2s;
+    position: relative;
+  }
+  
+  .userDeleteBtn {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    border: none;
+    background-color: transparent;
+    font-size: 25px;
+    transform: rotate(45deg);
+    display: none;
+  }
+  
+  @media screen and (max-width: 768px) {
+    button.userDeleteBtn {
+      display:block;
+    }
+    
+  }
+  
+  .wrapper:hover .userDeleteBtn {
+    display: block;
+  }
+  
+  .wrapper:nth-child(odd) {
+    background-color: #fff;
+  }
+  .wrapper:nth-child(even) {
+    background-color: var(--b-light-yellow);
+  }
+  
+  .textInfoContainer {
+    width: 70%;
+    height: 100%;
+    box-sizing: border-box;
+    border-right: solid 2px var(--b-dark-yellow);
+    padding: 10px;
+  }
+  
+  .imageContainer {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  .userImage {
+    height: auto;
+    width: 105px;
+  }
+  
+  .fadeIn {
+    animation: fadeIn 2s;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
